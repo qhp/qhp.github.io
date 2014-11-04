@@ -1,0 +1,184 @@
+#site-width {
+    width: 930px;
+    margin: 0 auto;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.row:after, .row:before {
+    display: table;
+    content: " ";
+}
+
+.span-65, .span-50, .span-35 {
+    float: left;
+}
+
+.span-65 {
+    width: 65%;
+}
+
+.span-50 {
+    width: 50%;
+}
+
+.span-35 {
+    width: 35%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    height: 74px;
+}
+
+#logo, #slogan, #phone-icon-right, #phone-icon-left, #phone-numbers {
+    position: absolute;
+}
+
+#logo {
+    top: 8px;
+    left: 23px;
+    width: 71px;
+    height: 53px;
+    background: url("images/a2xlogo_topleft.png") top left no-repeat;
+}
+
+#slogan {
+    top: 31px;
+    left: 97px;
+    font-weight: bold;
+}
+
+#phone-icon-left {
+    top: 7px;
+    left: 10px;
+    width: 43px;
+    height: 43px;
+    background: url("images/header_phone_white.png") top left no-repeat;
+    display: none;
+}
+
+#phone-icon-right {
+    top: 17px;
+    right: 155px;
+    width: 40px;
+    height: 40px;
+    background: url("images/header_phone_black.png") top left no-repeat;
+}
+
+#phone-numbers {
+    top: 21px;
+    right: 22px;
+    font-weight: bold;
+}
+
+#phone-numbers div {
+    color: #ff9801;
+}
+
+#call-us {
+    padding-top: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    display: none;
+}
+/* end HEADER */
+
+/* ELEMENTS */
+.separator {
+    background: #b2d136 url("images/bg.png");
+    font-size: 24px;
+    font-weight: bold;
+    padding: 13px 0 13px 23px;
+    color: #fff;
+    text-shadow: -1px -1px 6px rgba(255,255,255,0.8);
+}
+/* end ELEMENTS */
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 731px) and (max-width: 930px) {
+
+    #site-width {
+        width: 930px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 730px) {
+
+    #site-width {
+        width: 730px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #site-width {
+        width: 100%;
+    }
+
+    .row {
+        margin-bottom: 0;
+    }
+
+    .span-65, .span-50, .span-35 {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* HEADER */
+    header {
+        height: 60px;
+        background: #ffcc00;
+        background: linear-gradient(to bottom, #fed325, #d9ae00);
+    }
+
+    #phone-icon-left, #call-us {
+        display: block;
+    }
+
+    #logo, #slogan, #phone-icon-right, #phone-numbers {
+        display: none;
+    }
+    /* end HEADER */
+
+    /* ELEMENTS */
+    .separator {
+        padding-left: 0;
+        text-align: center;
+    }
+    .relative {
+        position: relative;
+    }
+    /* end ELEMENTS */
+
+    /* CHECKOUT TYPE */
+    #checkout-type {
+        background: #ffffcc url("images/bg.png");
+    }
+    /* end CHECKOUT TYPE */
+}
+
+@media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2) and (min--moz-device-pixel-ratio: 2) {
+    #logo {
+        top: 16px;
+        left: 46px;
+        width: 142px;
+        height: 107px;
+        background: url("images/a2xlogo_topleft@2x.png") top left no-repeat;
+    }
+}
+/* end MEDIA QUERIES */
