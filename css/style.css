@@ -150,13 +150,7 @@ header {
         display: block;
     }
 
-    #phone-icon-left-retina {
-        position: absolute;
-        top: 7px;
-        left: 70px;
-        width: 43px;
-        height: 43px;
-        /*background: url("images/header_phone_white@2x.png") top left no-repeat;*/
+    #phone-icon-left {
         background-image: url("images/header_phone_white@2x.png"); background-size: cover;
     }
 
