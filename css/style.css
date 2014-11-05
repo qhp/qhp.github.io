@@ -173,6 +173,8 @@ header {
 }
 
 @media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2) and (min--moz-device-pixel-ratio: 2) {
+
+    /* HEADER */
     #logo {
         top: 16px;
         left: 46px;
@@ -180,5 +182,15 @@ header {
         height: 107px;
         background: url("images/a2xlogo_topleft@2x.png") top left no-repeat;
     }
+
+    #phone-icon-left {
+        top: 7px;
+        left: 10px;
+        width: 86px;
+        height: 86px;
+        background: url("images/header_phone_white@2x.png") top left no-repeat;
+        display: none;
+    }
+    /* end HEADER */
 }
 /* end MEDIA QUERIES */
