@@ -150,6 +150,14 @@ header {
         display: block;
     }
 
+    #phone-icon-left {
+        top: 7px;
+        left: 10px;
+        width: 86px;
+        height: 86px;
+        background: url("images/header_phone_white@2x.png") top left no-repeat;
+    }
+
     #logo, #slogan, #phone-icon-right, #phone-numbers {
         display: none;
     }

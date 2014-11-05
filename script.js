@@ -3,7 +3,7 @@ $(document).ready(function(){
     var $window  = $(window);
     var width    = $window.width();
     var isRetina = ('devicePixelRatio' in window && window.devicePixelRatio == 2) ? true : false;
-alert(isRetina)
+
     if (isRetina) {
         replace_2x();
     }
