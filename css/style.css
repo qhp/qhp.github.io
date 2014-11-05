@@ -111,14 +111,20 @@ header {
 /* Replace images for retina displays */
 @media screen and (-webkit-min-device-pixel-ratio:2), screen and (min--moz-device-pixel-ratio: 2) {
 
+    #logo, #phone-icon-left, #phone-icon-right {
+        background-size: cover;
+    }
+
     #logo {
         background-image: url("images/a2xlogo_topleft@2x.png");
-        background-size: cover;
     }
 
     #phone-icon-left {
         background-image: url("images/header_phone_white@2x.png");
-        background-size: cover;
+    }
+
+    #phone-icon-right {
+        background-image: url("images/header_phone_black.png");
     }
 }
 /* end Replace images for retina displays */
