@@ -1,5 +1,5 @@
 $(function(){
-    var $window = $(window);
+    var $window = $(window);alert($window.width());
     $window.resize(function(){
 
         var width = $window.width();
