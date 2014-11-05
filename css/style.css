@@ -108,7 +108,21 @@ header {
 }
 /* end ELEMENTS */
 
-/* MEDIA QUERIES */
+/* Replace images for retina displays */
+@media screen and (-webkit-min-device-pixel-ratio:2) and (min--moz-device-pixel-ratio: 2) {
+
+    #logo {
+        background-image: url("images/a2xlogo_topleft.png");
+        background-size: cover;
+    }
+
+    #phone-icon-left {
+        background-image: url("images/header_phone_white@2x.png");
+        background-size: cover;
+    }
+}
+/* end Replace images for retina displays */
+
 @media screen and (min-width: 731px) and (max-width: 930px) {
 
     #site-width {
@@ -148,10 +162,6 @@ header {
 
     #phone-icon-left, #call-us {
         display: block;
-    }
-
-    #phone-icon-left {
-        background-image: url("images/header_phone_white@2x.png"); background-size: cover;
     }
 
     #logo, #slogan, #phone-icon-right, #phone-numbers {
