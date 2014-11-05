@@ -174,7 +174,7 @@ header {
 
 @media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2) and (min--moz-device-pixel-ratio: 2) {
 
-    /* HEADER */
+    /* HEADER */body{background: red;}
     #logo {
         top: 16px;
         left: 46px;
