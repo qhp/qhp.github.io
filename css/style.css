@@ -97,6 +97,39 @@ header {
 }
 /* end HEADER */
 
+/* CHECKOUT TYPE */
+#checkout-type-wrap {
+    padding-top: 10px;
+    margin-bottom: 0;
+    background: #ffffcc url("images/bg.png");
+}
+
+#checkout-type-separator {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 49px;
+    background: url("images/checkout_separator.png") top center repeat-y;
+    z-index: 1999;
+}
+
+.checkout-header {
+    padding: 10px 0 9px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#type14 .checkout-header {
+    background: #ffb04f;
+}
+
+#type30 .checkout-header {
+    background: #b2d136 url("images/bg.png");
+}
+/* end CHECKOUT TYPE */
+
 /* ELEMENTS */
 .separator {
     background: #b2d136 url("images/bg.png");
@@ -105,6 +138,15 @@ header {
     padding: 13px 0 13px 23px;
     color: #fff;
     text-shadow: -1px -1px 6px rgba(255,255,255,0.8);
+}
+.relative {
+    position: relative;
+}
+.checkbox {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left: -9999px;
 }
 /* end ELEMENTS */
 
@@ -164,13 +206,14 @@ header {
         height: 60px;
         background: #ffcc00;
         background: linear-gradient(to bottom, #fed325, #d9ae00);
+        margin-bottom: 10px;
     }
 
     #phone-icon-left, #call-us {
         display: block;
     }
 
-    #logo, #slogan, #phone-icon-right, #phone-numbers {
+    #logo, #slogan, #phone-icon-right, #phone-numbers, #checkout-type-separator {
         display: none;
     }
     /* end HEADER */
@@ -180,16 +223,7 @@ header {
         padding-left: 0;
         text-align: center;
     }
-    .relative {
-        position: relative;
-    }
     /* end ELEMENTS */
-
-    /* CHECKOUT TYPE */
-    #checkout-type {
-        background: #ffffcc url("images/bg.png");
-    }
-    /* end CHECKOUT TYPE */
 }
 
 @media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2), screen and (min-width: 930px) and (min--moz-device-pixel-ratio: 2) {
