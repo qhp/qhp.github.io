@@ -150,11 +150,11 @@ header {
         display: block;
     }
 
-    #phone-icon-left {
+    #phone-icon-left-retina {
         top: 7px;
-        left: 10px;
-        width: 86px;
-        height: 86px;
+        left: 70px;
+        width: 43px;
+        height: 43px;
         background: url("images/header_phone_white@2x.png") top left no-repeat;
     }
 
