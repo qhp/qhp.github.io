@@ -123,7 +123,7 @@ header {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 320px) {
 
     #site-width {
         width: 100%;
@@ -153,8 +153,8 @@ header {
     #phone-icon-left-retina {
         top: 7px;
         left: 70px;
-        width: 43px;
-        height: 43px;
+        width: 86px;
+        height: 86px;
         background: url("images/header_phone_white@2x.png") top left no-repeat;
     }
 
