@@ -151,11 +151,13 @@ header {
     }
 
     #phone-icon-left-retina {
+        position: absolute;
         top: 7px;
         left: 70px;
         width: 86px;
         height: 86px;
-        background: url("images/header_phone_white@2x.png") top left no-repeat;
+        /*background: url("images/header_phone_white@2x.png") top left no-repeat;*/
+        background-image: url("images/header_phone_white@2x.png"); background-size: cover;
     }
 
     #logo, #slogan, #phone-icon-right, #phone-numbers {
