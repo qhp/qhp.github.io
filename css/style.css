@@ -109,10 +109,10 @@ header {
 /* end ELEMENTS */
 
 /* Replace images for retina displays */
-@media screen and (-webkit-min-device-pixel-ratio:2) and (min--moz-device-pixel-ratio: 2) {
+@media screen and (-webkit-min-device-pixel-ratio:2), screen and (min--moz-device-pixel-ratio: 2) {
 
     #logo {
-        background-image: url("images/a2xlogo_topleft.png");
+        background-image: url("images/a2xlogo_topleft@2x.png");
         background-size: cover;
     }
 
@@ -186,7 +186,7 @@ header {
     /* end CHECKOUT TYPE */
 }
 
-@media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2) and (min--moz-device-pixel-ratio: 2) {
+@media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2), screen and (min-width: 930px) and (min--moz-device-pixel-ratio: 2) {
 
     /* HEADER */body{background: red;}
     #logo {
