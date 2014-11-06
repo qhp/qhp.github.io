@@ -170,7 +170,7 @@ header {
 }
 
 #type14 .checkout-price {
-    left: 172px;
+    left: 37%;
 }
 
 #type30 .checkout-price {
@@ -190,11 +190,11 @@ header {
 }
 
 #type14 .checkout-info {
-    left: 315px;
+    left: 68%;
 }
 
 #type30 .checkout-info {
-    left: 165px;
+    left: 35.5%;
 }
 /* end CHECKOUT TYPE */
 
@@ -342,6 +342,22 @@ header {
     .checkout-bottle {
         width: 94px;
         height: 145px;
+    }
+
+    #type14 li, #type30 li {
+        font-size: 11px;
+    }
+
+    #type14 ul {
+        padding: 52px 0 20px 140px;
+    }
+
+    #type30 ul {
+        padding: 52px 194px 20px 73px;
+    }
+
+    #type14 .checkout-info {
+        font-size: 11px;
     }
     /* end CHECKOUT TYPE */
 
