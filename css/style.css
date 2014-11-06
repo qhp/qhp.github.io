@@ -115,18 +115,86 @@ header {
 }
 
 .checkout-header {
-    padding: 10px 0 9px 0;
+    position: relative;
+    padding: 10px 0 9px 0px;
     font-size: 30px;
     font-weight: bold;
     color: #fff;
 }
 
 #type14 .checkout-header {
+    padding-left: 38.8%;
     background: #ffb04f;
 }
 
 #type30 .checkout-header {
+    padding-left: 9.5%;
     background: #b2d136 url("images/bg.png");
+}
+
+.checkout-bottle {
+    position: absolute;
+    top: 10px;
+    width: 145px;
+    height: 224px;
+}
+
+#type14 .checkout-bottle {
+    left: 0;
+    background: url("images/bottle_shadowleft.png");
+    background-size: cover;
+}
+
+#type30 .checkout-bottle {
+    right: 0;
+    background: url("images/bottle_shadowright.png");
+    background-size: cover;
+}
+
+#type14 ul {
+    padding: 52px 48px 20px 201px;
+}
+
+#type30 ul {
+    padding: 52px 194px 20px 73px;
+}
+
+#type14 li, #type30 li {
+    font-size: 15px;
+    list-style: url("images/greencheck.png") outside;
+}
+
+.checkout-price {
+    position: absolute;
+    top: 63px;
+}
+
+#type14 .checkout-price {
+    left: 172px;
+}
+
+#type30 .checkout-price {
+    left: 38px;
+}
+
+.checkout-price span {
+    font-size: 20px;
+}
+
+.checkout-info {
+    position: absolute;
+    top: 57px;
+    color: #ee861e;
+    text-align: center;
+    width: 150px;
+}
+
+#type14 .checkout-info {
+    left: 315px;
+}
+
+#type30 .checkout-info {
+    left: 165px;
 }
 /* end CHECKOUT TYPE */
 
@@ -139,21 +207,49 @@ header {
     color: #fff;
     text-shadow: -1px -1px 6px rgba(255,255,255,0.8);
 }
+
 .relative {
     position: relative;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
 .checkbox {
+    background: url("images/checkbox_set.png") top left no-repeat;
     width: 33px;
     height: 33px;
+    display: block;
+    cursor: pointer;
+    z-index: 2999;
+}
+
+.checked {
+    background-position: -33px 0;
+}
+
+.checkbox-14 {
     position: absolute;
-    left: -9999px;
+    top: 9px;
+    left: 81.3%;
+}
+
+.checkbox-30 {
+    position: absolute;
+    top: 9px;
+    left: 58%;
 }
 /* end ELEMENTS */
 
 /* Replace images for retina displays */
 @media screen and (-webkit-min-device-pixel-ratio:2), screen and (min--moz-device-pixel-ratio: 2) {
 
-    #logo, #phone-icon-left, #phone-icon-right {
+    #logo, #phone-icon-left, #phone-icon-right, #checkout-type-separator, #type14 li, #type30 li, .checkbox {
         background-size: cover;
     }
 
@@ -167,6 +263,26 @@ header {
 
     #phone-icon-right {
         background-image: url("images/header_phone_black.png");
+    }
+
+    #checkout-type-separator {
+        background-image: url("images/checkout_separator@2x.png");
+    }
+
+    #type14 .checkout-bottle {
+        background-image: url("images/bottle_shadowleft@2x.png");
+    }
+
+    #type30 .checkout-bottle {
+        background-image: url("images/bottle_shadowright@2x.png");
+    }
+
+    #type14 li, #type30 li {
+        background-image: url("images/greencheck@2x.png");
+    }
+
+    .checkbox {
+        background-image: url("images/checkbox_set@2x.png");
     }
 }
 /* end Replace images for retina displays */
@@ -218,10 +334,24 @@ header {
     }
     /* end HEADER */
 
+    /* CHECKOUT TYPE */
+    .checkout-header {
+        font-size: 20.66px;
+    }
+
+    .checkout-bottle {
+        width: 94px;
+        height: 145px;
+    }
+    /* end CHECKOUT TYPE */
+
     /* ELEMENTS */
     .separator {
         padding-left: 0;
         text-align: center;
+    }
+    .checkbox-14, .checkbox-30 {
+        top: 3px;
     }
     /* end ELEMENTS */
 }

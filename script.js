@@ -11,6 +11,12 @@ $(document).ready(function(){
     $window.resize(function(){
 
     });
+
+    $('.checkbox').on('click', function() {
+        $('.checkbox').removeClass("checked");
+        $(this).addClass("checked");
+        $('#checkout-type').val($(this).data('type'));
+    });
 });
 
 function replace_2x() {
