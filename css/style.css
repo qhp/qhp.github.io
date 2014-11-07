@@ -49,14 +49,16 @@ header {
 #logo {
     top: 8px;
     left: 23px;
-    width: 71px;
-    height: 53px;
+    width: 72px;
+    height: 54px;
     background: url("images/a2xlogo_topleft.png") top left no-repeat;
+    background-size: cover;
 }
 
 #slogan {
     top: 31px;
-    left: 97px;
+    left: 98px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -71,16 +73,17 @@ header {
 
 #phone-icon-right {
     top: 17px;
-    right: 155px;
+    right: 139px;
     width: 40px;
     height: 40px;
     background: url("images/header_phone_black.png") top left no-repeat;
 }
 
 #phone-numbers {
-    top: 21px;
-    right: 22px;
-    font-weight: bold;
+    top: 20px;
+    right: 11px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 #phone-numbers div {
@@ -201,11 +204,10 @@ header {
 /* ELEMENTS */
 .separator {
     background: #b2d136 url("images/bg.png");
-    font-size: 24px;
-    font-weight: bold;
-    padding: 13px 0 13px 23px;
+    font-size: 26px;
+    padding: 9px 0 8px 21px;
     color: #fff;
-    text-shadow: -1px -1px 6px rgba(255,255,255,0.8);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 1px 0px 2px rgba(255,255,255,0.8);
 }
 
 .relative {
