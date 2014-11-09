@@ -17,6 +17,18 @@ $(document).ready(function(){
         $(this).addClass("checked");
         $('#checkout-type').val($(this).data('type'));
     });
+
+    $('#IMG').click(function(){
+
+        if ($(this).text() == 'ON') {
+            $(this).text('OFF');
+            $('#IMG2').hide();
+        } else {
+            $(this).text('ON');
+            $('#IMG2').show();
+        }
+
+    });
 });
 
 function replace_2x() {

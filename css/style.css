@@ -59,7 +59,8 @@ header {
     top: 31px;
     left: 98px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 500;
+    letter-spacing: -0.0265em;
 }
 
 #phone-icon-left {
@@ -81,9 +82,10 @@ header {
 
 #phone-numbers {
     top: 20px;
-    right: 11px;
-    font-size: 15px;
-    font-weight: 600;
+    right: 22px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 15px;
 }
 
 #phone-numbers div {
@@ -204,7 +206,7 @@ header {
 /* ELEMENTS */
 .separator {
     background: #b2d136 url("images/bg.png");
-    font-size: 26px;
+    font-size: 24px;
     padding: 9px 0 8px 21px;
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 1px 0px 2px rgba(255,255,255,0.8);
