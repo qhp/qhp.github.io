@@ -1,6 +1,7 @@
 #site-width {
     width: 930px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .row {
@@ -93,12 +94,13 @@ header {
 }
 
 #call-us {
-    padding-top: 16px;
+    padding-top: 17px;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     color: #fff;
     display: none;
+    letter-spacing: 0.045em;
 }
 /* end HEADER */
 
@@ -114,32 +116,33 @@ header {
     top: 10px;
     left: 0;
     width: 100%;
-    height: 49px;
+    height: 45px;
     background: url("images/checkout_separator.png") top center repeat-y;
     z-index: 1999;
 }
 
 .checkout-header {
     position: relative;
-    padding: 10px 0 9px 0px;
+    padding: 8px 0 7px 0px;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 600;
     color: #fff;
+    letter-spacing: -0.003em;
 }
 
 #type14 .checkout-header {
-    padding-left: 38.8%;
+    padding-left: 38%;
     background: #ffb04f;
 }
 
 #type30 .checkout-header {
-    padding-left: 9.5%;
+    padding-left: 9.1%;
     background: #b2d136 url("images/bg.png");
 }
 
 .checkout-bottle {
     position: absolute;
-    top: 10px;
+    top: 14px;
     width: 145px;
     height: 224px;
 }
@@ -157,21 +160,29 @@ header {
 }
 
 #type14 ul {
-    padding: 52px 48px 20px 201px;
+    padding: 52px 23px 20px 38%;
 }
 
 #type30 ul {
-    padding: 52px 194px 20px 73px;
+    padding: 52px 160px 20px 10%;
 }
 
 #type14 li, #type30 li {
     font-size: 15px;
-    list-style: url("images/greencheck.png") outside;
+    list-style: none;
+    background: url("images/greencheck.png") top left no-repeat;
+    padding: 10px 0 0 33px;
+    margin-bottom: 5px;
+    letter-spacing: 0.025em;
+}
+
+#type30 li {
+    line-height: 17px;
 }
 
 .checkout-price {
     position: absolute;
-    top: 63px;
+    top: 62px;
 }
 
 #type14 .checkout-price {
@@ -179,11 +190,12 @@ header {
 }
 
 #type30 .checkout-price {
-    left: 38px;
+    left: 8%;
 }
 
 .checkout-price span {
     font-size: 20px;
+    padding-left: 2px;
 }
 
 .checkout-info {
@@ -191,25 +203,27 @@ header {
     top: 57px;
     color: #ee861e;
     text-align: center;
-    width: 150px;
+    width: 155px;
 }
 
 #type14 .checkout-info {
-    left: 68%;
+    left: 64.5%;
+    line-height: 18px;
 }
 
 #type30 .checkout-info {
-    left: 35.5%;
+    left: 35.1%;
 }
 /* end CHECKOUT TYPE */
 
 /* ELEMENTS */
 .separator {
     background: #b2d136 url("images/bg.png");
-    font-size: 24px;
-    padding: 9px 0 8px 21px;
+    font-size: 23px;
+    padding: 10px 0 9px 22px;
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 1px 0px 2px rgba(255,255,255,0.8);
+    letter-spacing: 0.035em;
 }
 
 .relative {
@@ -239,14 +253,14 @@ header {
 
 .checkbox-14 {
     position: absolute;
-    top: 9px;
+    top: 6px;
     left: 81.3%;
 }
 
 .checkbox-30 {
     position: absolute;
-    top: 9px;
-    left: 58%;
+    top: 6px;
+    left: 57.5%;
 }
 /* end ELEMENTS */
 
@@ -341,37 +355,93 @@ header {
     /* CHECKOUT TYPE */
     .checkout-header {
         font-size: 20.66px;
+        padding: 6px 0 5px 0;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+
+    #type30 .checkout-header {
+        padding-left: 8.7%;
     }
 
     .checkout-bottle {
-        width: 94px;
-        height: 145px;
+        top: 10px;
+        left: -3px;
+        width: 100px;
+        height: 154px;
+    }
+
+    #type30 .checkout-bottle {
+        left: 69.5%;
+    }
+
+    .checkout-price {
+        font-size: 12px;
+        top: 42px;
+        letter-spacing: -0.05em;
+    }
+
+    .checkout-price span {
+        font-size: 15px;
+    }
+
+    .checkout-info {
+        top: 37px;
+        line-height: 14px;
+        font-size: 11px;
+    }
+
+    #type14 .checkout-info {
+        left: 66.5%;
     }
 
     #type14 li, #type30 li {
         font-size: 11px;
+        background-image: url("images/greencheck_mobile.png");
+        padding: 5px 0 0 23px;
+    }
+
+    #type30 li {
+        line-height: 13px;
     }
 
     #type14 ul {
-        padding: 52px 0 20px 140px;
+        padding: 36px 0 4px 38%;
     }
 
     #type30 ul {
-        padding: 52px 194px 20px 73px;
+        padding: 33px 100px 13px 10%;
     }
 
     #type14 .checkout-info {
         font-size: 11px;
+        line-height: 14px;
+        width: 90px;
     }
+
+    #type30 .checkout-info {
+        left: 27.5%;
+    }
+
     /* end CHECKOUT TYPE */
 
     /* ELEMENTS */
     .separator {
-        padding-left: 0;
+        padding: 12px 0 12px 0;
         text-align: center;
+        font-size: 18px;
+        letter-spacing: 0.015em;
     }
+
     .checkbox-14, .checkbox-30 {
-        top: 3px;
+        top: 4px;
+        width: 22px;
+        height: 22px;
+        background-size: cover;
+    }
+
+    .checked {
+        background-position: -23px;
     }
     /* end ELEMENTS */
 }
