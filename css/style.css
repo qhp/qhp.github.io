@@ -167,7 +167,7 @@ header {
     padding: 52px 160px 20px 10%;
 }
 
-#type14 li, #type30 li {
+#type14 li, #type30 li, #you-selected li {
     font-size: 15px;
     list-style: none;
     background: url("images/greencheck.png") top left no-repeat;
@@ -216,6 +216,44 @@ header {
 }
 /* end CHECKOUT TYPE */
 
+
+/* YOU SELECTED */
+#selected-bottle {
+    position: absolute;
+    top: 14px;
+    width: 145px;
+    height: 224px;
+    left: 0;
+    background: url("images/bottle_shadowleft.png");
+    background-size: cover;
+}
+
+#selected-title {
+    padding: 6.1% 0 0 30.3%;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+#selected-title p {
+    padding-top: 3%;
+    font-size: 131%;
+    letter-spacing: -0.015em;
+}
+
+#selected-info {
+    padding: 4.4% 0 6.7% 30.3%;
+}
+
+#satisfaction-guarantee {
+    position: absolute;
+    top: 7%;
+    left: 62.2%;
+    width: 78px;
+    height: 78px;
+    background: url("images/satisfactionguaranteed.png") top left no-repeat;
+}
+/* end YOU SELECTED */
+
 /* ELEMENTS */
 .separator {
     background: #b2d136 url("images/bg.png");
@@ -224,6 +262,11 @@ header {
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 1px 0px 2px rgba(255,255,255,0.8);
     letter-spacing: 0.035em;
+}
+
+.separator-orange {
+    background-color: #ee861e;
+    margin: 20px 0 20px 0;
 }
 
 .relative {
@@ -261,6 +304,63 @@ header {
     position: absolute;
     top: 6px;
     left: 57.5%;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.padding-right {
+    padding-right: 20px;
+}
+
+.form-space {
+    height: 10px;
+}
+
+.input-row {
+    position: relative;
+    margin: 0 0 10px 19px;
+    padding-left: 40px;
+}
+
+.input-row input {
+    width: 57%;
+    background: #eeeeee;
+    color: #666666;
+    border: 1px solid #e6e6e6;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    letter-spacing: -0.019em;
+    padding: 10px 0 10px 19px;
+}
+
+.input-row div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url("images/input_bkgrd_off.png") top left no-repeat;
+}
+
+i.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+i.icon-name {
+    background: url("images/input_icon-name.png") top left no-repeat;
+}
+
+i.icon-phone {
+    background: url("images/input_icon-phone.png") top left no-repeat;
+}
+
+i.icon-email {
+    background: url("images/input_icon-email.png") top left no-repeat;
 }
 /* end ELEMENTS */
 
