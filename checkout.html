@@ -16,7 +16,7 @@
 
 <div id="IMG2" style=" position: absolute;z-index: 9999;top: 0;left: 169px;opacity:0.6;"><img src="screen_desktop.png"/></div>
 <!--<div id="IMG2" style=" position: absolute;z-index: 9999;top: 0;left: 0px;opacity:0.6;"><img src="screen_mobile.png"/></div>-->
-<div id="IMG" style="position: absolute;top: 770px;left: 30px;cursor: pointer;z-index: 99999;">ON</div>
+<div id="IMG" style="position: absolute;top: 1700px;left: 30px;cursor: pointer;z-index: 99999;">ON</div>
 
         <header>
             <div id="logo"></div>
@@ -98,13 +98,123 @@
                         </div>
 
                         <div class="separator separator-orange">Shipping Info</div>
-                    </form>
 
+                        <div class="input-row">
+                            <input type="text" placeholder="United States"/>
+                            <div><i class="icon icon-country"></i></div>
+                        </div>
+
+                        <div class="input-row">
+                            <input type="text" placeholder="Address Line 1"/>
+                            <div><i class="icon icon-address"></i></div>
+                        </div>
+
+                        <div class="input-row">
+                            <input type="text" placeholder="Address Line 1"/>
+                            <div><i class="icon icon-address"></i></div>
+                        </div>
+
+                        <div class="input-row">
+                            <input type="text" placeholder="City"/>
+                            <div><i class="icon icon-city"></i></div>
+                        </div>
+
+                        <div class="input-row">
+                            <input type="text" placeholder="Select a State"/>
+                            <div><i class="icon icon-state"></i></div>
+                        </div>
+
+                        <div class="input-row">
+                            <input type="text" placeholder="Zip/Postal Code"/>
+                            <div><i class="icon icon-zipcode"></i></div>
+                        </div>
+
+                        <div class="separator separator-orange">Billing Info</div>
+
+                        <div id="shipping-info">
+                            <select>
+                                <option>Some as shipping info</option>
+                            </select>
+                        </div>
+
+                        <div class="separator separator-orange">Payment Info</div>
+
+                        <div id="payment-info">
+                            <div class="input-row">
+                                <input type="text" placeholder="Credit / Debit Card Number"/>
+                                <div><i class="icon icon-cardnumber"></i></div>
+                            </div>
+
+                            <div id="payment-cards">
+                                <div id="visa"></div>
+                                <div id="mastercard"></div>
+                                <div id="discover"></div>
+                                <div id="amex"></div>
+
+                                <div id="mcafee"></div>
+                                <div id="bca"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <input type="text" placeholder="Expiration Date"/>
+                            <div><i class="icon icon-expdate"></i></div>
+                        </div>
+                        
+                        <div id="terms-block">
+                            <input type="checkbox" name="terms" id="terms"/>
+                            <label for="terms">Agree to <a href="#">Terms and Conditions</a> <sup>*</sup></label>
+                            <p>By checking this box you are agreeing to the Terms and Conditions, electronically signing you order, and authorizing us to charge payments against credit card provided above.</p>
+                            <div id="required-fields"><sup>*</sup> indicates required fields</div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="span-35">
                 <div class="separator">Order Summary</div>
+                <div id="order-summary">
+                    <div id="order-summary-title">A2X: 14 Day Trial</div>
+                    <div id="order-summary-text">We make A2X available as an affordable 14 day trial to provide everyone the opportunity to try our product and find out how it works for them.
+                        For today’s 14 day trial, you will be charged one payment of $2.95 for shipping and handling for this shipment.
+                        <b>As a part of our continued commitment to you, we will send you a new supply of A2X approximately eighteen days
+                        after your initial order if you live in the US or Canada or twenty-one days if you live outside of the US or Canada, and then monthly shipments thereafter.
+                        You will receive the guaranteed price of $39.95 plus $9.95 shipping and handling per month,
+                        which will be conveniently charged to the credit card you provide today at the time of each shipment unless you call to cancel.
+                        We do not provide refunds for any charges after the trial period has expired. Notice of cancellation is required one day before the next scheduled shipment.
+                        There is no commitment and no minimum to buy. Exact shipment times may vary. For all inquiries, contact us at (877) 973-6339 or email us at support@a2xanxiety.com.</b>
+                        We welcome all feedback regarding your body’s response to the 14 day trial. Please feel free to contact us and let us know how A2X is working for you.
+
+                        <div id="order-totals">
+                            <div class="row">
+                                <div class="span-50">Subtotal<br/>Shipping</div>
+                                <div class="span-50 text-right">$0.00<br/>$0.00</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="span-50">Total</div>
+                                <div class="span-50 text-right"><b>$2.95</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="row">
+            <div id="complete-order">
+                <p>SSL Secured Checkout</p>
+                <div>Your Order Total: <b>$2.95</b></div>
+                <button>Complete Order</button>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div></div>
+            <p>Copyright &copy;2011-2014 Impact Nutraceuticals LLC, ALL Rights Reserved. <br/>
+                Offers subject to change or cancellation at any time, Impact Nutraceuticals LLC is not responsible for pricing or other errors.
+            </p>
         </div>
     </div>
 </body>
