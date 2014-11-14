@@ -20,8 +20,9 @@ $(document).ready(function() {
         $('#checkout-type').val($(this).data('type'));
     });
 
-    $('#IMG').click(function(){
 
+    $('#IMG').draggable();
+    $('#IMG').click(function(){
         var screen = (width < 730) ? 'IMG2' : 'IMG1';
         if ($(this).text() == 'ON') {
             $(this).text('OFF');

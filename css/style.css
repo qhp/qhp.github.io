@@ -275,7 +275,7 @@ header {
     border-radius: 0 5px 5px 0;
     font-size: 16px;
     letter-spacing: -0.019em;
-    padding: 10px 0 10px 19px;
+    padding: 10px 0 9px 19px;
 }
 
 .input-not-empty {
@@ -714,34 +714,35 @@ i.icon-expdate {
     /* CHECKOUT TYPE */
     .checkout-header {
         font-size: 20.66px;
-        padding: 6px 0 5px 39% !important;
+        padding: 6px 0 5px 38% !important;
         font-weight: 500;
         letter-spacing: 0em;
     }
 
     #type30 .checkout-header {
         padding-left: 8.7% !important;
+        letter-spacing: 0.025em;
     }
 
     .checkout-bottle {
-        top: 10px;
+        top: 11px;
         left: -3px !important;
         width: 100px;
         height: 154px;
     }
 
     #type30 .checkout-bottle {
-        left: 71.5%;
+        left: 69.5% !important;
     }
 
     .checkout-price {
         font-size: 12px;
-        top: 41px;
+        top: 43px;
         letter-spacing: -0.05em;
     }
 
     #type14 .checkout-price {
-        left: 38%;
+        left: 37%;
     }
 
     .checkout-price span {
@@ -755,7 +756,7 @@ i.icon-expdate {
     }
 
     #type14 .checkout-info {
-        left: 68.5%;
+        left: 66.5%;
     }
 
     #type14 li, #type30 li {
@@ -769,11 +770,11 @@ i.icon-expdate {
     }
 
     #type14 ul {
-        padding: 36px 0 1px 39%;
+        padding: 36px 0 1px 38%;
     }
 
     #type30 ul {
-        padding: 33px 95px 13px 10%;
+        padding: 35px 95px 11px 10%;
     }
 
     #type14 .checkout-info {
@@ -810,14 +811,14 @@ i.icon-expdate {
     }
 
     .checkbox-14, .checkbox-30 {
-        top: 4px;
+        top: 5px;
         width: 22px;
         height: 22px;
         background-size: cover;
     }
 
     .checkbox-30 {
-        left: 60%;
+        left: 58%;
     }
 
     .checked {
@@ -838,7 +839,7 @@ i.icon-expdate {
 
     #selected-title {
         font-size: 71%;
-        padding: 17px 0 0 35%;
+        padding: 16px 0 0 34%;
     }
 
     #selected-title p {
@@ -847,12 +848,12 @@ i.icon-expdate {
 
     #selected-info {
         width: 70%;
-        padding: 20px 0 0 35%;
+        padding: 20px 0 0 34%;
     }
 
     #satisfaction-guarantee {
         top: 6px;
-        left: 76%;
+        left: 73%;
         width: 52px;
         height: 52px;
     }
@@ -882,11 +883,11 @@ i.icon-expdate {
         top: 173px;
         font-size: 18px;
         line-height: 29px;
-        right: 10px;
+        right: 20px;
     }
 
     #total-text {
-        padding: 160px 10px 23px 10px;
+        padding: 160px 10px 46px 10px;
         font-size: 12px;
         line-height: 1.16em;
     }
@@ -907,6 +908,7 @@ i.icon-expdate {
 
     #contact-info {
         margin-top: 8px;
+        margin-bottom: 17px;
     }
 
     #payment-cards {
