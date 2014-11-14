@@ -933,6 +933,24 @@ i.icon-expdate {
     #footer span {
         height: 12px;
     }
+
+    #terms-block input {
+        margin: 6px 15px 0 -8px;
+    }
+
+    #terms-block p {
+        padding: 5px 0 43px 24px;
+        line-height: 14px;
+    }
+
+    #required-fields {
+        top: 102px;
+        left: 7px;
+    }
+
+    #complete-order p {
+        background-position: 23% 11px;
+    }
     /* end FORM */
 }
 
