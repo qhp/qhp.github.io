@@ -22,12 +22,13 @@ $(document).ready(function() {
 
     $('#IMG').click(function(){
 
+        var screen = (width < 730) ? 'IMG2' : 'IMG1';
         if ($(this).text() == 'ON') {
             $(this).text('OFF');
-            $('#IMG2').hide();
+            $('#'+screen).hide();
         } else {
             $(this).text('ON');
-            $('#IMG2').show();
+            $('#'+screen).show();
         }
 
     });

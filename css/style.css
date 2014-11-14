@@ -597,7 +597,7 @@ i.icon-expdate {
 .checkbox-14 {
     position: absolute;
     top: 6px;
-    left: 84.3%;
+    left: 81.3%;
 }
 
 .checkbox-30 {
@@ -716,7 +716,7 @@ i.icon-expdate {
         font-size: 20.66px;
         padding: 6px 0 5px 39% !important;
         font-weight: 500;
-        letter-spacing: 0.02em;
+        letter-spacing: 0em;
     }
 
     #type30 .checkout-header {
@@ -725,7 +725,7 @@ i.icon-expdate {
 
     .checkout-bottle {
         top: 10px;
-        left: -3px;
+        left: -3px !important;
         width: 100px;
         height: 154px;
     }
