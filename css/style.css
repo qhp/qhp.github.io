@@ -269,14 +269,52 @@ header {
 
 .input-row input {
     width: 57%;
-    background: #eeeeee;
+    background: #eeeeee url("images/input_bg.png") -160px 0 repeat-x;
     color: #666666;
     border: 1px solid #e6e6e6;
     border-radius: 0 5px 5px 0;
     font-size: 16px;
     letter-spacing: -0.019em;
     padding: 10px 0 10px 19px;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.input-not-empty {
+    background-position: -160px 0 !important;
+}
+
+.input-row p {
+    position: absolute;
+    top: 4px;
+    left: 65%;
+    color: red;
+}
+
+.js-enabled .input-row p {
+    display: none;
+}
+
+#input-name {
+    background-position: 10px 0;
+}
+
+#input-address {
+    background-position: -26px 0;
+}
+
+#input-city {
+    background-position: -100px 0;
+}
+
+#input-card {
+    background-position: 64px 0;
+}
+
+#input-expdate {
+    background-position: -19px 0;
+}
+
+#input-name:focus {
+    background: #eeeeee url("images/input_bg.png") -160px 0 repeat-x;
 }
 
 .input-row div {
@@ -474,6 +512,10 @@ i.icon-expdate {
     background: url("images/satisfactionguaranteed.png");
     width: 78px;
     height: 78px;
+}
+
+#footer span {
+    display: block;
 }
 /* end FOOTER */
 
@@ -762,6 +804,11 @@ i.icon-expdate {
         letter-spacing: 0.015em;
     }
 
+    .separator-orange {
+        text-align: left;
+        padding-left: 16px;
+    }
+
     .checkbox-14, .checkbox-30 {
         top: 4px;
         width: 22px;
@@ -839,11 +886,52 @@ i.icon-expdate {
     }
 
     #total-text {
-        padding: 180px 10px 10px 10px;
+        padding: 160px 10px 23px 10px;
         font-size: 12px;
-        line-height: 15px;
+        line-height: 1.16em;
+    }
+
+    #total-text hr {
+        margin-bottom: 13px;
     }
     /* end YOU SELECTED */
+
+    /* FORM */
+    .input-row {
+        margin: 0 0 10px 6px;
+    }
+
+    .input-row input {
+        width: 90%;
+    }
+
+    #contact-info {
+        margin-top: 8px;
+    }
+
+    #payment-cards {
+        padding: 2px 0 11px 19px;
+    }
+
+    #footer div {
+        background-size: cover;
+        top: 28%;
+        left: 1.5%;
+        width: 52px;
+        height: 52px;
+    }
+
+    #footer p {
+        font-size: 9px;
+        padding: 27px 0 0 61px;
+        letter-spacing: -0.04em;
+        line-height: 11px;
+    }
+
+    #footer span {
+        height: 12px;
+    }
+    /* end FORM */
 }
 
 @media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2), screen and (min-width: 930px) and (min--moz-device-pixel-ratio: 2) {

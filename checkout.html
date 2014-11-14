@@ -16,7 +16,7 @@
 
 <!--<div id="IMG2" style=" position: absolute;z-index: 9999;top: 0;left: 169px;opacity:0.6;"><img src="screen_desktop.png"/></div>-->
 <div id="IMG2" style=" position: absolute;z-index: 9999;top: 0;left: 0;opacity:0.6;"><img src="screen_mobile.png"/></div>
-<div id="IMG" style="position: absolute;top: 1213px;left: 30px;cursor: pointer;z-index: 99999;">ON</div>
+<div id="IMG" style="position: absolute;top: 2150px;left: 30px;cursor: pointer;z-index: 99999;">ON</div>
 
         <header>
             <div id="logo"></div>
@@ -79,15 +79,16 @@
                         </ul>
                         <div id="satisfaction-guarantee"></div>
 
-                        <div id="total-left">
+                        <div id="total-left" class="hide-on-desktop">
                             Subtotal<br/>Shipping<br/><br/>Total
                         </div>
 
-                        <div id="total-right">
+                        <div id="total-right" class="hide-on-desktop">
                             $0.00<br/>$2.95<br/><br/><b>$2.95</b>
                         </div>
 
                         <div id="total-text" class="hide-on-desktop">
+                            <hr/>
                             We make A2X available as an affordable 14 day trial to provide everyone the opportunity to try our product and find out how it works for them.
                             For today’s 14 day trial, you will be charged one payment of $2.95 for shipping and handling for this shipment.
                             <b>As a part of our continued commitment to you, we will send you a new supply of A2X approximately eighteen days
@@ -102,13 +103,14 @@
                     </div>
 
                     <form>
-                        <div class="separator separator-orange">2. Checkout</div>
+                        <div class="separator hide-on-desktop">2. Checkout</div>
 
-                        <div class="separator separator-orange">Contact Info</div>
+                        <div id="contact-info" class="separator separator-orange">Contact Info</div>
 
                         <div class="input-row">
-                            <input type="text" placeholder="First and Last name"/>
+                            <input type="text" id="input-name" placeholder="First and Last name"/>
                             <div><i class="icon icon-name"></i></div>
+                            <p>*</p>
                         </div>
 
                         <div class="input-row">
@@ -128,19 +130,26 @@
                             <div><i class="icon icon-country"></i></div>
                         </div>
 
-                        <div class="input-row">
-                            <input type="text" placeholder="Address Line 1"/>
+                        <div class="input-row hide-on-mobile">
+                            <input type="text" id="input-address" placeholder="Address Line 1"/>
+                            <div><i class="icon icon-address"></i></div>
+                            <p>*</p>
+                        </div>
+
+                        <div class="input-row hide-on-mobile">
+                            <input type="text" placeholder="Address Line 2"/>
+                            <div><i class="icon icon-address"></i></div>
+                        </div>
+
+                        <div class="input-row hide-on-desktop">
+                            <input type="text" placeholder="Address"/>
                             <div><i class="icon icon-address"></i></div>
                         </div>
 
                         <div class="input-row">
-                            <input type="text" placeholder="Address Line 1"/>
-                            <div><i class="icon icon-address"></i></div>
-                        </div>
-
-                        <div class="input-row">
-                            <input type="text" placeholder="City"/>
+                            <input type="text" id="input-city" placeholder="City"/>
                             <div><i class="icon icon-city"></i></div>
+                            <p>*</p>
                         </div>
 
                         <div class="input-row">
@@ -153,9 +162,9 @@
                             <div><i class="icon icon-zipcode"></i></div>
                         </div>
 
-                        <div class="separator separator-orange">Billing Info</div>
+                        <div class="separator separator-orange hide-on-mobile">Billing Info</div>
 
-                        <div id="shipping-info">
+                        <div id="shipping-info" class="hide-on-mobile">
                             <select>
                                 <option>Some as shipping info</option>
                             </select>
@@ -165,8 +174,9 @@
 
                         <div id="payment-info">
                             <div class="input-row">
-                                <input type="text" placeholder="Credit / Debit Card Number"/>
+                                <input type="text" id="input-card" placeholder="Credit / Debit Card Number"/>
                                 <div><i class="icon icon-cardnumber"></i></div>
+                                <p>*</p>
                             </div>
 
                             <div id="payment-cards">
@@ -181,8 +191,9 @@
                         </div>
 
                         <div class="input-row">
-                            <input type="text" placeholder="Expiration Date"/>
+                            <input type="text" id="input-expdate" placeholder="Expiration Date"/>
                             <div><i class="icon icon-expdate"></i></div>
+                            <p>*</p>
                         </div>
                         
                         <div id="terms-block">
@@ -236,7 +247,7 @@
 
         <div id="footer">
             <div></div>
-            <p>Copyright &copy;2011-2014 Impact Nutraceuticals LLC, ALL Rights Reserved. <br/>
+            <p>Copyright &copy;2011-2014 Impact Nutraceuticals LLC, ALL Rights Reserved. <span></span>
                 Offers subject to change or cancellation at any time, Impact Nutraceuticals LLC is not responsible for pricing or other errors.
             </p>
         </div>

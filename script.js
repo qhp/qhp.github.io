@@ -1,4 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function() {
+
+    $('body').addClass('js-enabled');
 
     var $window  = $(window);
     var width    = $window.width();
@@ -28,6 +30,13 @@ $(document).ready(function(){
             $('#IMG2').show();
         }
 
+    });
+
+    $('.input-row input').change(function(){
+        if ($(this).val().length > 0)
+            $(this).addClass('input-not-empty');
+        else
+            $(this).removeClass('input-not-empty');
     });
 });
 
