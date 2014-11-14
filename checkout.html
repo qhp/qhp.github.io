@@ -14,9 +14,9 @@
 <body>
     <div id="site-width">
 
-<div id="IMG2" style=" position: absolute;z-index: 9999;top: 0;left: 169px;opacity:0.6;"><img src="screen_desktop.png"/></div>
-<!--<div id="IMG2" style=" position: absolute;z-index: 9999;top: 0;left: 0px;opacity:0.6;"><img src="screen_mobile.png"/></div>-->
-<div id="IMG" style="position: absolute;top: 1700px;left: 30px;cursor: pointer;z-index: 99999;">ON</div>
+<!--<div id="IMG2" style=" position: absolute;z-index: 9999;top: 0;left: 169px;opacity:0.6;"><img src="screen_desktop.png"/></div>-->
+<div id="IMG2" style=" position: absolute;z-index: 9999;top: 0;left: 0;opacity:0.6;"><img src="screen_mobile.png"/></div>
+<div id="IMG" style="position: absolute;top: 1213px;left: 30px;cursor: pointer;z-index: 99999;">ON</div>
 
         <header>
             <div id="logo"></div>
@@ -60,7 +60,8 @@
             <div class="clear"></div>
         </div>
 
-        <div class="separator margin-bottom">2. Checkout</div>
+        <div class="separator margin-bottom hide-on-mobile">2. Checkout</div>
+        <div class="separator margin-bottom hide-on-desktop">2. Order Summary</div>
 
         <div class="row">
             <div class="span-65">
@@ -77,9 +78,32 @@
                             <li>Discreet Packaging</li>
                         </ul>
                         <div id="satisfaction-guarantee"></div>
+
+                        <div id="total-left">
+                            Subtotal<br/>Shipping<br/><br/>Total
+                        </div>
+
+                        <div id="total-right">
+                            $0.00<br/>$2.95<br/><br/><b>$2.95</b>
+                        </div>
+
+                        <div id="total-text" class="hide-on-desktop">
+                            We make A2X available as an affordable 14 day trial to provide everyone the opportunity to try our product and find out how it works for them.
+                            For today’s 14 day trial, you will be charged one payment of $2.95 for shipping and handling for this shipment.
+                            <b>As a part of our continued commitment to you, we will send you a new supply of A2X approximately eighteen days
+                                after your initial order if you live in the US or Canada or twenty-one days if you live outside of the US or Canada, and then monthly shipments thereafter.
+                                You will receive the guaranteed price of $39.95 plus $9.95 shipping and handling per month,
+                                which will be conveniently charged to the credit card you provide today at the time of each shipment unless you call to cancel.
+                                We do not provide refunds for any charges after the trial period has expired. Notice of cancellation is required one day before the next scheduled shipment.
+                                There is no commitment and no minimum to buy. Exact shipment times may vary. For all inquiries, contact us at (877) 973-6339 or email us at support@a2xanxiety.com.
+                            </b>
+                            We welcome all feedback regarding your body’s response to the 14 day trial. Please feel free to contact us and let us know how A2X is working for you.
+                        </div>
                     </div>
 
                     <form>
+                        <div class="separator separator-orange">2. Checkout</div>
+
                         <div class="separator separator-orange">Contact Info</div>
 
                         <div class="input-row">
@@ -170,7 +194,7 @@
                     </form>
                 </div>
             </div>
-            <div class="span-35">
+            <div class="span-35 hide-on-mobile">
                 <div class="separator">Order Summary</div>
                 <div id="order-summary">
                     <div id="order-summary-title">A2X: 14 Day Trial</div>

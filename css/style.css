@@ -255,6 +255,7 @@ header {
     width: 78px;
     height: 78px;
     background: url("images/satisfactionguaranteed.png") top left no-repeat;
+    background-size: cover;
 }
 /* end YOU SELECTED */
 
@@ -275,6 +276,7 @@ header {
     font-size: 16px;
     letter-spacing: -0.019em;
     padding: 10px 0 10px 19px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
 
 .input-row div {
@@ -553,7 +555,7 @@ i.icon-expdate {
 .checkbox-14 {
     position: absolute;
     top: 6px;
-    left: 81.3%;
+    left: 84.3%;
 }
 
 .checkbox-30 {
@@ -572,6 +574,10 @@ i.icon-expdate {
 
 .text-right {
     text-align: right;
+}
+
+.hide-on-desktop {
+    display: none;
 }
 /* end ELEMENTS */
 
@@ -666,13 +672,13 @@ i.icon-expdate {
     /* CHECKOUT TYPE */
     .checkout-header {
         font-size: 20.66px;
-        padding: 6px 0 5px 0;
+        padding: 6px 0 5px 39% !important;
         font-weight: 500;
         letter-spacing: 0.02em;
     }
 
     #type30 .checkout-header {
-        padding-left: 8.7%;
+        padding-left: 8.7% !important;
     }
 
     .checkout-bottle {
@@ -683,13 +689,17 @@ i.icon-expdate {
     }
 
     #type30 .checkout-bottle {
-        left: 69.5%;
+        left: 71.5%;
     }
 
     .checkout-price {
         font-size: 12px;
-        top: 42px;
+        top: 41px;
         letter-spacing: -0.05em;
+    }
+
+    #type14 .checkout-price {
+        left: 38%;
     }
 
     .checkout-price span {
@@ -703,7 +713,7 @@ i.icon-expdate {
     }
 
     #type14 .checkout-info {
-        left: 66.5%;
+        left: 68.5%;
     }
 
     #type14 li, #type30 li {
@@ -717,11 +727,11 @@ i.icon-expdate {
     }
 
     #type14 ul {
-        padding: 36px 0 4px 38%;
+        padding: 36px 0 1px 39%;
     }
 
     #type30 ul {
-        padding: 33px 100px 13px 10%;
+        padding: 33px 95px 13px 10%;
     }
 
     #type14 .checkout-info {
@@ -731,12 +741,20 @@ i.icon-expdate {
     }
 
     #type30 .checkout-info {
-        left: 27.5%;
+        left: 28.5%;
     }
 
     /* end CHECKOUT TYPE */
 
     /* ELEMENTS */
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .hide-on-desktop {
+        display: block;
+    }
+
     .separator {
         padding: 12px 0 12px 0;
         text-align: center;
@@ -751,15 +769,87 @@ i.icon-expdate {
         background-size: cover;
     }
 
+    .checkbox-30 {
+        left: 60%;
+    }
+
     .checked {
         background-position: -23px;
     }
+
+    .padding-right {
+        padding: 0;
+    }
     /* end ELEMENTS */
+
+    /* YOU SELECTED */
+    #selected-bottle {
+        width: 100px;
+        height: 154px;
+        top: 0;
+    }
+
+    #selected-title {
+        font-size: 71%;
+        padding: 17px 0 0 35%;
+    }
+
+    #selected-title p {
+
+    }
+
+    #selected-info {
+        width: 70%;
+        padding: 20px 0 0 35%;
+    }
+
+    #satisfaction-guarantee {
+        top: 6px;
+        left: 76%;
+        width: 52px;
+        height: 52px;
+    }
+
+    #you-selected li {
+        font-size: 11px;
+        background-image: url("images/greencheck_mobile.png");
+        padding: 5px 0 0 23px;
+        font-weight: 600;
+        letter-spacing: -0.05em;
+    }
+
+    #order-totals .span-50 {
+        width: 50%;
+    }
+
+    #total-left {
+        position: absolute;
+        top: 172px;
+        left: 7%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #total-right {
+        position: absolute;
+        top: 173px;
+        font-size: 18px;
+        line-height: 29px;
+        right: 10px;
+    }
+
+    #total-text {
+        padding: 180px 10px 10px 10px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    /* end YOU SELECTED */
 }
 
 @media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2), screen and (min-width: 930px) and (min--moz-device-pixel-ratio: 2) {
 
-    /* HEADER */body{background: red;}
+    /* HEADER */
+    body{background: red;}
     #logo {
         top: 16px;
         left: 46px;
