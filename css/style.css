@@ -175,6 +175,7 @@ header {
     font-size: 15px;
     list-style: none;
     background: url("images/greencheck.png") top left no-repeat;
+    background-size: 26px 25px;
     padding: 10px 0 0 33px;
     margin-bottom: 5px;
     letter-spacing: 0.025em;
@@ -667,7 +668,7 @@ i.icon-expdate {
     }
 
     #selected-bottle {
-        background-image: url("images/satisfactionguaranteed@2x.png");
+        background-image: url("images/bottle_shadowleft@2x.png");
     }
 
     .input-row input {
