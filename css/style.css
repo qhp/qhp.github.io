@@ -314,7 +314,7 @@ header {
 }
 
 #input-name:focus {
-    background: #eeeeee url("images/input_bg.png") -160px 0 repeat-x;
+    background-position: -160px 0 repeat-x;
 }
 
 .input-row div {
@@ -324,6 +324,7 @@ header {
     width: 40px;
     height: 40px;
     background: url("images/input_bkgrd_off.png") top left no-repeat;
+    background-size: cover;
 }
 
 i.icon {
@@ -421,6 +422,7 @@ i.icon-expdate {
     background: url("images/mcafee.png");
     width: 105px;
     height: 42px;
+    background-size: cover;
 }
 
 #bca {
@@ -430,6 +432,7 @@ i.icon-expdate {
     background: url("images/bca.png");
     width: 137px;
     height: 78px;
+    background-size: cover;
 }
 
 #terms-block {
@@ -654,12 +657,92 @@ i.icon-expdate {
         background-image: url("images/bottle_shadowright@2x.png");
     }
 
-    #type14 li, #type30 li {
+    #type14 li, #type30 li, #you-selected li {
         background-image: url("images/greencheck@2x.png");
     }
 
     .checkbox {
         background-image: url("images/checkbox_set@2x.png");
+    }
+
+    #selected-bottle {
+        background-image: url("images/satisfactionguaranteed@2x.png");
+    }
+
+    .input-row input {
+        background-image: url("images/input_bg@2x.png");
+    }
+
+    #input-name:focus {
+        background-position: -320px 0 repeat-x;
+    }
+
+    .input-row div {
+        background-image: url("images/input_bkgrd_off@2x.png");
+    }
+
+    i.icon-name {
+        background-image: url("images/input_icon-name@2x.png");
+    }
+
+    i.icon-phone {
+        background: url("images/input_icon-phone@2x.png");
+    }
+
+    i.icon-email {
+        background: url("images/input_icon-email@2x.png");
+    }
+
+    i.icon-country {
+        background: url("images/input_icon-country@2x.png");
+    }
+
+    i.icon-address {
+        background: url("images/input_icon-address@2x.png");
+    }
+
+    i.icon-city {
+        background: url("images/input_icon-city@2x.png");
+    }
+
+    i.icon-state {
+        background: url("images/input_icon-state@2x.png");
+    }
+
+    i.icon-zipcode {
+        background: url("images/input_icon-zipcode@2x.png");
+    }
+
+    i.icon-cardnumber {
+        background: url("images/input_icon-cardnumber@2x.png");
+    }
+
+    i.icon-expdate {
+        background: url("images/input_icon-expdate@2x.png");
+    }
+
+    #visa, #mastercard, #discover, #amex {
+        background-image: url("images/card_set@2x.png");
+    }
+
+    #mcafee {
+        background-image: url("images/mcafee@2x.png");
+    }
+
+    #bca {
+        background-image: url("images/bca@2x.png");
+    }
+
+    #complete-order p {
+        background-image: url("images/lock@2x.png");
+    }
+
+    #footer div {
+        background-image: url("images/satisfactionguaranteed@2x.png");
+    }
+
+    #order-summary-title {
+        background-image: url("images/order_summary_arrow@2x.png");
     }
 }
 /* end Replace images for retina displays */
