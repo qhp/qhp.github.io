@@ -57,7 +57,6 @@ header {
     width: 72px;
     height: 54px;
     background: url("images/a2xlogo_topleft.png") top left no-repeat;
-    background-size: cover;
 }
 
 #slogan {
@@ -1041,24 +1040,5 @@ i.icon-expdate {
 
 @media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2), screen and (min-width: 930px) and (min--moz-device-pixel-ratio: 2) {
 
-    /* HEADER */
-    body{background: red;}
-    #logo {
-        top: 16px;
-        left: 46px;
-        width: 142px;
-        height: 107px;
-        background: url("images/a2xlogo_topleft@2x.png") top left no-repeat;
-    }
-
-    #phone-icon-left {
-        top: 7px;
-        left: 10px;
-        width: 86px;
-        height: 86px;
-        background: url("images/header_phone_white@2x.png") top left no-repeat;
-        display: none;
-    }
-    /* end HEADER */
 }
 /* end MEDIA QUERIES */
