@@ -82,6 +82,7 @@ header {
     width: 40px;
     height: 40px;
     background: url("images/header_phone_black.png") top left no-repeat;
+    background-size: 35px 35px;
 }
 
 #phone-numbers {
@@ -121,6 +122,7 @@ header {
     width: 100%;
     height: 45px;
     background: url("images/checkout_separator.png") top center repeat-y;
+    background-size: 56px 44px;
     z-index: 1999;
 }
 
@@ -270,12 +272,13 @@ header {
 .input-row input {
     width: 57%;
     background: #eeeeee url("images/input_bg.png") -160px 0 repeat-x;
+    background-size: 474px 37px;
     color: #666666;
     border: 1px solid #e6e6e6;
     border-radius: 0 5px 5px 0;
     font-size: 16px;
     letter-spacing: -0.019em;
-    padding: 10px 0 10px 19px;
+    padding: 10px 0 9px 19px;
     margin: 0;
 }
 
@@ -328,11 +331,31 @@ header {
     background-size: cover;
 }
 
+.input-row.red div {
+    background-image: url("images/input_bkgrd_error.png");
+    width: 46px;
+    background-size: 46px 40px;
+}
+
+.input-row.blue div {
+    background-image: url("images/input_bkgrd_on.png");
+    width: 46px;
+    background-size: 46px 40px;
+}
+
+.input-row.red input {
+    border: 1px solid #da2c2c;
+}
+
+.input-row.blue input {
+    border: 1px solid #008bff;
+}
+
 i.icon {
     display: block;
     width: 40px;
     height: 40px;
-    background-size: cover;
+    background-size: 40px 40px !important;
 }
 
 i.icon-name {
@@ -397,7 +420,8 @@ i.icon-expdate {
     position: relative;
     width: 62px;
     height: 42px;
-    background: url("images/card_set.png");
+    background-image: url("images/card_set.png");
+    background-size: 499px 42px;
 }
 
 #visa {
@@ -420,7 +444,7 @@ i.icon-expdate {
     position: absolute;
     top: 1px;
     left: 446px;
-    background: url("images/mcafee.png");
+    background-image: url("images/mcafee.png");
     width: 105px;
     height: 42px;
     background-size: cover;
@@ -430,7 +454,7 @@ i.icon-expdate {
     position: absolute;
     top: 73px;
     left: 431px;
-    background: url("images/bca.png");
+    background-image: url("images/bca.png");
     width: 137px;
     height: 78px;
     background-size: cover;
@@ -533,6 +557,7 @@ i.icon-expdate {
     padding: 15px 0 0 13.5%;
     font-size: 20px;
     background: url("images/order_summary_arrow.png") 10px 16px no-repeat;
+    background-size: 21px 18px;
 }
 
 #order-summary-text {
@@ -630,7 +655,7 @@ i.icon-expdate {
 /* Replace images for retina displays */
 @media screen and (-webkit-min-device-pixel-ratio:2), screen and (min--moz-device-pixel-ratio: 2) {
 
-    #logo, #phone-icon-left, #phone-icon-right, #checkout-type-separator, #type14 li, #type30 li, .checkbox {
+    #logo, #phone-icon-left, .checkbox {
         background-size: cover;
     }
 
@@ -643,7 +668,7 @@ i.icon-expdate {
     }
 
     #phone-icon-right {
-        background-image: url("images/header_phone_black.png");
+        background-image: url("images/header_phone_black@2x.png");
     }
 
     #checkout-type-separator {
@@ -744,6 +769,14 @@ i.icon-expdate {
 
     #order-summary-title {
         background-image: url("images/order_summary_arrow@2x.png");
+    }
+
+    .input-row.red div {
+        background-image: url("images/input_bkgrd_error@2x.png");
+    }
+
+    .input-row.blue div {
+        background-image: url("images/input_bkgrd_on@2x.png");
     }
 }
 /* end Replace images for retina displays */
