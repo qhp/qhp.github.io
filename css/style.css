@@ -275,7 +275,8 @@ header {
     border-radius: 0 5px 5px 0;
     font-size: 16px;
     letter-spacing: -0.019em;
-    padding: 10px 0 9px 19px;
+    padding: 10px 0 10px 19px;
+    margin: 0;
 }
 
 .input-not-empty {
@@ -510,7 +511,7 @@ i.icon-expdate {
 
 #footer div {
     position: absolute;
-    top: 5%;
+    top: 14px;
     left: 1.3%;
     background: url("images/satisfactionguaranteed.png");
     width: 78px;
