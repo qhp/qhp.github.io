@@ -154,13 +154,13 @@ header {
 
 #type14 .checkout-bottle {
     left: 0;
-    background: url("images/bottle_shadowleft.png");
+    background-image: url("images/bottle_shadowleft.png");
     background-size: cover;
 }
 
 #type30 .checkout-bottle {
     right: 0;
-    background: url("images/bottle_shadowright.png");
+    background-image: url("images/bottle_shadowright.png");
     background-size: cover;
 }
 
@@ -666,7 +666,12 @@ i.icon-expdate {
 /* end ELEMENTS */
 
 /* Replace images for retina displays */
-@media screen and (-webkit-min-device-pixel-ratio:2), screen and (min--moz-device-pixel-ratio: 2) {
+@media screen and (min-width:930px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 930px),
+only screen and (-omin-device-pixel-ratio: 2/1) and (min-width:930px),
+only screen and (min-device-pixelratio: 2) and (min-width:930px),
+only screen and (min-resolution: 192dpi) and (min-width: 930px),
+only screen and (min-resolution: 2dppx) and (min-width:930px) {
 
     #logo, #phone-icon-left, .checkbox {
         background-size: cover;
@@ -808,6 +813,19 @@ i.icon-expdate {
     }
 }
 
+/* IPad Retina */
+@media screen and (min-width: 730px) and (max-width : 929px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 730px) and (max-width : 929px),
+only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 730px) and (max-width : 929px),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 730px) and (max-width : 929px),
+only screen and (min-device-pixel-ratio: 2) and (min-width: 730px) and (max-width : 929px),
+only screen and (min-resolution: 192dpi) and (min-width: 730px) and (max-width : 929px),
+only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 929px) {
+
+}
+/* end IPad Retina */
+
+
 @media screen and (max-width: 320px) {
 
     #site-width {
@@ -893,6 +911,7 @@ i.icon-expdate {
         font-size: 11px;
         background-image: url("images/greencheck_mobile.png");
         padding: 5px 0 0 23px;
+        background-size: 18px 17px;
     }
 
     #type30 li {
@@ -991,6 +1010,7 @@ i.icon-expdate {
     #you-selected li {
         font-size: 11px;
         background-image: url("images/greencheck_mobile.png");
+        background-size: 18px 17px;
         padding: 5px 0 0 23px;
         font-weight: 600;
         letter-spacing: -0.05em;
@@ -1082,9 +1102,5 @@ i.icon-expdate {
         background-position: 23% 11px;
     }
     /* end FORM */
-}
-
-@media screen and (min-width: 930px) and (-webkit-min-device-pixel-ratio:2), screen and (min-width: 930px) and (min--moz-device-pixel-ratio: 2) {
-
 }
 /* end MEDIA QUERIES */
