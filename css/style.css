@@ -666,12 +666,7 @@ i.icon-expdate {
 /* end ELEMENTS */
 
 /* Replace images for retina displays */
-@media screen and (min-width:930px) and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 930px),
-only screen and (-omin-device-pixel-ratio: 2/1) and (min-width:930px),
-only screen and (min-device-pixelratio: 2) and (min-width:930px),
-only screen and (min-resolution: 192dpi) and (min-width: 930px),
-only screen and (min-resolution: 2dppx) and (min-width:930px) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
 
     #logo, #phone-icon-left, .checkbox {
         background-size: cover;
