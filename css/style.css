@@ -106,6 +106,11 @@ header {
     display: none;
     letter-spacing: 0.045em;
 }
+
+#call-us a {
+    color: #fff;
+    text-decoration: none;
+}
 /* end HEADER */
 
 /* CHECKOUT TYPE */
@@ -794,17 +799,59 @@ i.icon-expdate {
 }
 /* end Replace images for retina displays */
 
-@media screen and (min-width: 731px) and (max-width: 930px) {
+@media screen and (min-width: 930px) {
 
     #site-width {
         width: 930px;
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 730px) {
+/* IPad */
+@media screen and (min-width : 730px) and (max-width : 929px) {
+
+    /* CHECKOUT TYPE */
+    .checkout-header {
+        padding: 11px 0 10px 0px;
+        font-size: 24px;
+    }
+
+    .checkout-info {
+        font-size: 12px;
+    }
+
+    #type14 .checkout-bottle {
+        left: -21px;
+    }
+
+    #type30 .checkout-bottle {
+        right: -21px;
+    }
+
+    #type30 .checkout-info {
+        left: 32%;
+    }
+
+    #selected-bottle {
+        left: -20px;
+    }
+
+    #satisfaction-guarantee {
+        left: 69.2%;
+    }
+    /* end CHECKOUT TYPE */
+
+    /* CONFIRM ORDER */
+    #complete-order p {
+        background-position: 40% 11px;
+    }
+    /* end CONFIRM ORDER */
+}
+/* end IPad */
+
+@media screen and (min-width: 730px) and (max-width: 929px) {
 
     #site-width {
-        width: 730px;
+        width: 100%;
     }
 }
 
@@ -816,12 +863,134 @@ only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 730px) and (max
 only screen and (min-device-pixel-ratio: 2) and (min-width: 730px) and (max-width : 929px),
 only screen and (min-resolution: 192dpi) and (min-width: 730px) and (max-width : 929px),
 only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 929px) {
+    #logo, #phone-icon-left, .checkbox {
+        background-size: cover;
+    }
 
+    #logo {
+        background-image: url("images/a2xlogo_topleft@ipad.png");
+    }
+
+    #phone-icon-left {
+        background-image: url("images/header_phone_white@2x.png");
+    }
+
+    #phone-icon-right {
+        background-image: url("images/header_phone_black@2x.png");
+    }
+
+    #checkout-type-separator {
+        background-image: url("images/checkout_separator@2x.png");
+    }
+
+    #type14 .checkout-bottle {
+        background-image: url("images/bottle_shadowleft@ipad.png");
+    }
+
+    #type30 .checkout-bottle {
+        background-image: url("images/bottle_shadowright@ipad.png");
+    }
+
+    #type14 li, #type30 li, #you-selected li {
+        background-image: url("images/greencheck@ipad.png");
+    }
+
+    .checkbox {
+        background-image: url("images/checkbox_set@ipad.png");
+    }
+
+    #selected-bottle {
+        background-image: url("images/bottle_shadowleft@ipad.png");
+    }
+
+    .input-row input {
+        background-image: url("images/input_bg@2x.png");
+    }
+
+    #input-name:focus {
+        background-position: -320px 0 repeat-x;
+    }
+
+    .input-row div {
+        background-image: url("images/input_bkgrd_off@ipad.png");
+    }
+
+    i.icon-name {
+        background-image: url("images/input_icon-name@ipad.png");
+    }
+
+    i.icon-phone {
+        background: url("images/input_icon-phone@ipad.png");
+    }
+
+    i.icon-email {
+        background: url("images/input_icon-email@ipad.png");
+    }
+
+    i.icon-country {
+        background: url("images/input_icon-country@ipad.png");
+    }
+
+    i.icon-address {
+        background: url("images/input_icon-address@ipad.png");
+    }
+
+    i.icon-city {
+        background: url("images/input_icon-city@ipad.png");
+    }
+
+    i.icon-state {
+        background: url("images/input_icon-state@ipad.png");
+    }
+
+    i.icon-zipcode {
+        background: url("images/input_icon-zipcode@ipad.png");
+    }
+
+    i.icon-cardnumber {
+        background: url("images/input_icon-cardnumber@ipad.png");
+    }
+
+    i.icon-expdate {
+        background: url("images/input_icon-expdate@ipad.png");
+    }
+
+    #visa, #mastercard, #discover, #amex {
+        background-image: url("images/card_set@2x.png");
+    }
+
+    #mcafee {
+        background-image: url("images/mcafee@2x.png");
+    }
+
+    #bca {
+        background-image: url("images/bca@2x.png");
+    }
+
+    #complete-order p {
+        background-image: url("images/lock@ipad.png");
+    }
+
+    #footer div {
+        background-image: url("images/satisfactionguaranteed@ipad.png");
+    }
+
+    #order-summary-title {
+        background-image: url("images/order_summary_arrow@2x.png");
+    }
+
+    .input-row.red div {
+        background-image: url("images/input_bkgrd_error@ipad.png");
+    }
+
+    .input-row.blue div {
+        background-image: url("images/input_bkgrd_on@ipad.png");
+    }
 }
 /* end IPad Retina */
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 729px) {
 
     #site-width {
         width: 100%;
@@ -857,25 +1026,26 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
     /* CHECKOUT TYPE */
     .checkout-header {
         font-size: 20.66px;
-        padding: 6px 0 5px 38% !important;
+        padding: 6px 0 5px 122px !important;
         font-weight: 500;
         letter-spacing: 0em;
     }
 
     #type30 .checkout-header {
-        padding-left: 8.7% !important;
+        text-align: right;
+        padding-left: 0 !important;
+        padding-right: 149px !important;
         letter-spacing: 0.025em;
     }
 
     .checkout-bottle {
         top: 11px;
-        left: -3px !important;
         width: 100px;
         height: 154px;
     }
 
     #type30 .checkout-bottle {
-        left: 69.5% !important;
+        right: -2px !important;
     }
 
     .checkout-price {
@@ -884,8 +1054,13 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
         letter-spacing: -0.05em;
     }
 
+    #type30 .checkout-price {
+        left: inherit !important;
+        right: 224px;
+    }
+
     #type14 .checkout-price {
-        left: 37%;
+        left: 119px;
     }
 
     .checkout-price span {
@@ -899,7 +1074,7 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
     }
 
     #type14 .checkout-info {
-        left: 66.5%;
+        left: 211px;
     }
 
     #type14 li, #type30 li {
@@ -914,11 +1089,13 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
     }
 
     #type14 ul {
-        padding: 36px 0 1px 38%;
+        padding: 36px 0 1px 121px;
     }
 
     #type30 ul {
-        padding: 35px 95px 11px 10%;
+        padding: 35px 95px 21px 10%;
+
+        float: right;
     }
 
     #type14 .checkout-info {
@@ -928,7 +1105,8 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
     }
 
     #type30 .checkout-info {
-        left: 28.5%;
+        left: inherit;
+        right: 80px;
     }
 
     /* end CHECKOUT TYPE */
@@ -959,10 +1137,12 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
         width: 22px;
         height: 22px;
         background-size: cover;
+        left: 261px;
     }
 
     .checkbox-30 {
-        left: 58%;
+        left: inherit;
+        right: 112px;
     }
 
     .checked {
@@ -983,7 +1163,7 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
 
     #selected-title {
         font-size: 71%;
-        padding: 16px 0 0 34%;
+        padding: 16px 0 0 109px;
     }
 
     #selected-title p {
@@ -992,12 +1172,12 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
 
     #selected-info {
         width: 70%;
-        padding: 20px 0 0 34%;
+        padding: 20px 0 0 108px;
     }
 
     #satisfaction-guarantee {
         top: 6px;
-        left: 73%;
+        left: 235px;
         width: 52px;
         height: 52px;
     }
@@ -1049,6 +1229,7 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
 
     .input-row input {
         width: 90%;
+        max-width: 350px;
     }
 
     #contact-info {
@@ -1097,5 +1278,23 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
         background-position: 23% 11px;
     }
     /* end FORM */
+}
+
+@media screen and (min-width: 374px) and (max-width: 413px) {
+
+    /* CHECKOUT TYPE */
+    #type30 ul {
+        padding: 35px 115px 11px 8%;
+    }
+    /* end CHECKOUT TYPE */
+}
+
+@media screen and (min-width: 413px) and (max-width: 729px) {
+
+    /* CHECKOUT TYPE */
+    #type30 ul {
+        padding: 35px 115px 21px 8%;
+    }
+    /* end CHECKOUT TYPE */
 }
 /* end MEDIA QUERIES */
