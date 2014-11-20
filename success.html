@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Checkout Success</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style-success.css"/>
+
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="script-success.js"></script>
+</head>
+<body> <div id="IMG" style="position: absolute;top: 150px;left: 30px;cursor: pointer;z-index: 99999; background: red;color: #fff;font-weight: bold; padding: 20px 5px 5px 5px;">ON</div>
+    <div id="site-width">
+
+        <div class="hide-on-mobile" id="IMG1" style="position: absolute;z-index: 9999;top: 0;left: 0;opacity:0.6;"><img src="screen_desktop_success.png"/></div>
+        <div class="hide-on-desktop" id="IMG2" style="position: absolute;z-index: 9999;top: 0;left: 0;opacity:0.6;"><img src="screen_mobile_success.png"/></div>
+
+        <header>
+            <div id="logo"></div>
+            <div id="slogan">for Natural Anxiety Relief</div>
+            <div id="phone-icon-right"></div>
+            <div id="phone-numbers">
+                <div>1 (877) 9-REMEDY</div>1 (877) 973-6339
+            </div>
+            <div id="call-us"><a href="tel:18779736339">Call Us</a></div>
+        </header>
+
+        <div class="separator">Order Confirmation</div>
+
+        <h1>Thank You for Your Order, <span>{first_name}</span>!</h1>
+
+        <img src="css/images/receipt.png" class="hide-on-mobile receipt-main">
+        <img src="css/images/receipt@2x.png" class="hide-on-mobile receipt-retina">
+        <img src="css/images/receipt@ipad.png" class="hide-on-mobile receipt-ipad">
+        <br/>
+
+        <div id="order-info">
+            <div class="hide-on-mobile">
+                Your order number is <b>{Order Number}</b>.
+                <br/>
+                <br/>
+                <img src="css/images/receipt.png" class="hide-on-desktop receipt-main">
+                <img src="css/images/receipt@2x.png" class="hide-on-desktop receipt-retina">
+                <img src="css/images/receipt@ipad.png" class="hide-on-desktop receipt-ipad">
+                <div id="order-info-br" class="hide-on-desktop"/></div>
+                We have sent you a copy of your receipt via email.
+                <div class="hide-on-mobile"/></div>
+                You may also <a href="#">click here</a> to view/print a copy of your receipt.
+            </div>
+
+            <div class="hide-on-desktop">
+                Your order number is <b>{Order Number}</b>.
+                <br/>
+                <img src="css/images/receipt.png" class="hide-on-desktop"/>
+                <div id="order-info-br" class="hide-on-desktop"/></div>
+                We have sent you a copy of your receipt via email.
+                <div class="hide-on-mobile"/></div>
+                You may also <a href="#">click here</a> to view/print a copy of your receipt.
+            </div>
+
+        </div>
+
+        <div class="separator">Checkout this short video...</div>
+
+        <div id="video-block">
+
+            <div class="hide-on-mobile">
+                We would also like to introduce you to a weird but effective technique
+                <br/>
+                that many of our customers use alongside A2X for a comprehensive
+                <br/>
+                approach to anxiety relief.
+                <br/>
+                <br/>
+                <span>Check out this short video to find out more:</span>
+            </div>
+
+            <div class="hide-on-desktop">
+                We would also like to introduce you to a weird
+                <br/>
+                but effective technique that many of our
+                <br/>
+                customers use alongside A2X for a
+                <br/>
+                comprehensive approach to anxiety relief.
+                <br/>
+                <br/>
+                <span>Check out this short video to find out more:</span>
+            </div>
+
+            <div id="video">
+                <a href="http://a2xanxiety.com/panicaway">
+                    <img src="css/images/panicaway.jpg" id="panicaway-main">
+                    <img src="css/images/panicaway@2x.jpg" id="panicaway-retina">
+                    <img src="css/images/panicaway@ipad.jpg" id="panicaway-ipad">
+                </a>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div></div>
+            <p>Copyright &copy;2011-2014 Impact Nutraceuticals LLC, ALL Rights Reserved. <span></span>
+                Offers subject to change or cancellation at any time, Impact Nutraceuticals LLC is not responsible for pricing or other errors.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
