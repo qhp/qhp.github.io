@@ -1,18 +1,6 @@
 $(function() {
-
-    $('#video img').click(function() {
-        $(this).hide();
-        $('#my-video').removeClass('hide-video');
-        var myPlayer = document.getElementById('my-video');
-        myPlayer.playVideo();
-    });
-
-
-
-
-
     var $window  = $(window);
-    var width    = $window.width();
+    var width    = $window.width();a
     $('#IMG').draggable();
     $('#IMG').click(function(){
         var screen = (width < 730) ? 'IMG2' : 'IMG1';

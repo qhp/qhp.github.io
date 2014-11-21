@@ -20,7 +20,7 @@ header {
     left: 23px;
     width: 72px;
     height: 54px;
-    background: url("images/a2xlogo_topleft.png") top left no-repeat;
+    background-image: url("images/a2xlogo_topleft.png");
     background-size: 72px 54px;
 }
 
@@ -37,7 +37,7 @@ header {
     right: 139px;
     width: 40px;
     height: 40px;
-    background: url("images/header_phone_black.png") top left no-repeat;
+    background: url("images/header_phone_black.png") no-repeat;
     background-size: 35px 35px;
 }
 
@@ -102,8 +102,20 @@ h1 span{
 }
 
 #receipt {
+    margin: 26px 0px 0px 165px;
+    background-image: url("images/receipt.png");
+    background-size: cover;
+    width: 137px;
+    height: 148px;
     float: left;
-    margin: 26px -98px 20px 17.7%;
+}
+
+#receipt-info {
+    padding: 63px 112px 80px 0;
+    text-align: center;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.045em;
 }
 
 #order-info {
@@ -114,18 +126,6 @@ h1 span{
 
 a {
     color: #0033ff;
-}
-
-.receipt-main, .receipt-retina, .receipt-ipad {
-    width: 137px;
-}
-
-.receipt-retina, .receipt-ipad {
-    display: none;
-}
-
-.panicaway-retina, .panicaway-ipad {
-    display: none;
 }
 /* end ORDER CONFIRMATION */
 
@@ -146,6 +146,15 @@ a {
     color: #ff8d00;
     font-size: 19px;
     letter-spacing: -0.033em;
+}
+
+#panicaway {
+    display: block;
+    margin: 25px auto 0 auto;
+    background-image: url("images/panicaway.jpg");
+    background-size: cover;
+    width: 482px;
+    height: 274px;
 }
 
 #video {
@@ -208,24 +217,16 @@ only screen and (min-resolution: 2dppx) and (min-width:930px) {
         background: url("images/header_phone_black@2x.png") top left no-repeat;
     }
 
+    #receipt {
+        background-image: url("images/receipt@2x.png");
+    }
+
+    #panicaway {
+        background-image: url("images/panicaway@2x.jpg");
+    }
+
     #footer div {
         background: url("images/satisfactionguaranteed@2x.png") no-repeat;
-    }
-
-    #receipt-main, #receipt-ipad {
-        display: none;
-    }
-
-    #receipt-retina {
-        display: block;
-    }
-
-    #panicaway-main, #panicaway-ipad {
-        display: none;
-    }
-
-    #panicaway-main {
-        display: none;
     }
 }
 
@@ -237,31 +238,23 @@ only screen and (min-device-pixel-ratio: 2) and (min-width: 730px) and (max-widt
 only screen and (min-resolution: 192dpi) and (min-width: 730px) and (max-width : 929px),
 only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 929px) {
     #logo {
-        background: url("images/a2xlogo_topleft@ipad.png") top left no-repeat;
+        background-image: url("images/a2xlogo_topleft@ipad.png") top left no-repeat;
     }
 
     #phone-icon-right {
-        background: url("images/header_phone_black@2x.png") top left no-repeat;
+        background-image: url("images/header_phone_black@2x.png");
+    }
+
+    #receipt {
+        background-image: url("images/receipt@ipad.png");
+    }
+
+    #panicaway {
+        background-image: url("images/panicaway@ipad.jpg");
     }
 
     #footer div {
-        background: url("images/satisfactionguaranteed@ipad.png") no-repeat;
-    }
-
-    #receipt-main, #receipt-retina {
-        display: none;
-    }
-
-    #receipt-ipad {
-        display: block;
-    }
-
-    #panicaway-main, #panicaway-retina {
-        display: none;
-    }
-
-    #panicaway-ipad {
-        display: none;
+        background-image: url("images/satisfactionguaranteed@ipad.png");
     }
 }
 
@@ -272,10 +265,6 @@ only screen and (min-resolution: 2dppx) and (min-width: 730px) and (max-width : 
 
     #order-info {
         font-size: 14px;
-    }
-
-    #receipt {
-        margin: 26px -11px 20px 17.7%;
     }
 }
 
