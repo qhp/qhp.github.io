@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>HTML Tanks</title>
+        <style>
+            body {
+                background:url("coors.png") no-repeat;
+            }
+        </style>
+        <script>
+            var angle = 0;
+            var x = 500;
+            var y = 400;
+
+            document.onkeypress = function(evt) {
+                evt = evt || window.event;
+                var charCode = evt.keyCode || evt.which;
+                var button = String.fromCharCode(charCode);
+                var tank = document.getElementById("tank");
+
+                // Change align
+                if (button == 'a')
+                    angle -= 5;
+                if (button == 'd')
+                    angle += 5;
+                if (angle >=360 || angle <= -360)
+                    angle = 0;
+                if (angle == -185)
+                    angle = 175;
+
+                tank.style.transform = "rotate("+ angle +"deg)";
+
+                // Change position
+                if (button == 'w' || button == 's') {
+
+                    if (Math.abs(angle) != 90) {
+                        var deltaX = 10;
+                        var rad = angle * Math.PI / 180;
+                        var deltaY = Math.tan(rad) * 10;
+                    } else {
+                        var deltaX = 0;
+                        var deltaY = 10;
+                    }
+
+                    if (button == 'w') {
+
+                        if (Math.abs(angle) <= 90) {
+                            y += deltaY;
+                            x += deltaX;
+                        } else {
+                            y += deltaY;
+                            x += deltaX;
+                        }
+
+                    } else {
+
+                        if (Math.abs(angle) >= 90) {
+                            x -= deltaX;
+                            y -= deltaY;
+                        } else {
+                            x += deltaX;
+                            y += deltaY;
+                        }
+
+                    }
+
+                    tank.style.top = y;
+                    tank.style.left = x;
+                }
+
+                document.getElementById('x').innerText = 'X: ' + x;
+                document.getElementById('y').innerText = 'Y: ' + y;
+                document.getElementById('angle').innerHTML = 'Angle: ' + angle + ' <sup>o</sup>';
+            };
+        </script>
+    </head>
+    <body>
+        <div id="x" style="position: absolute; top: 30px; left: 210px; font-size: 16px; font-weight: bold;">X: 500</div>
+        <div id="y" style="position: absolute; top: 146px; left: 30px; font-size: 16px; font-weight: bold;">Y: 400</div>
+        <div id="angle" style="position: absolute; top: 30px; left: 30px; font-size: 16px; font-weight: bold;">Angle: 0 <sup>o</sup></div>
+
+        <img id="tank" src="tank.png" style="position: absolute; top: 400px; left: 500px;"/>
+    </body>
+</html>
